@@ -24,3 +24,10 @@ Auth::routes();
 Route::get('/home', [
     HomeController::class, 'index'
 ])->name('home');
+
+
+Route::resource('pegawais', App\Http\Controllers\PegawaiController::class);
+
+Route::resource('jabatans', App\Http\Controllers\JabatanController::class);
+
+Route::resource('laporans', App\Http\Controllers\LaporanController::class);

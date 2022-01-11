@@ -17,3 +17,10 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+Route::resource('pegawais', App\Http\Controllers\API\PegawaiAPIController::class);
+
+Route::resource('jabatans', App\Http\Controllers\API\JabatanAPIController::class);
+
+Route::resource('laporans', App\Http\Controllers\API\LaporanAPIController::class);
