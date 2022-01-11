@@ -17,7 +17,7 @@
 <li class="nav-item">
     <a href="{{ route('laporans.index') }}"
        class="nav-link {{ Request::is('laporans*') ? 'active' : '' }}">
-        <p>Laporans</p>
+        <p>Laporan</p>
     </a>
 </li>
 
